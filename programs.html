@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/hii.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>Fchbm Programs</title>
+  </head>
+  <body class="about-program">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            class="logo"
+            src="../img/fchbm.jpg"
+            alt="My logo"
+            onclick="window.location ='index.html'"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav-items navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="../about.html">Who we are</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../about.html#our-pastor"
+                    >Our Pastor</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Info Center
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./programs.html"
+                    >Our Programs</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Media
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./src/media.html">Audios</a>
+                </li>
+              </ul>
+            </li>
+            <button
+              type="button"
+              class="nav-btn btn btn-primary"
+              onclick="window.location = 'tel:08067430191' "
+            >
+              CONTACT
+            </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="hero-info">
+      <p>Home > Info Center</p>
+      <h1>PROGRAMS</h1>
+    </section>
+    <section class="program1">
+      <div class="program-container">
+        <div class="mercy-visitation">
+          <h1 id="small" class="show">
+            Hour of Mercy and Visitation
+            <a href="#big" id="lnk" onclick="Open()"><i class="fa-solid fa-plus"></i></a>
+            <a href="#big" id="lnk2" onclick="Close()"><i class="fa-solid fa-circle-minus"></i></a>
+          </h1>
+
+          <div id="big" class="hide">
+            <p>
+              Come and receive from God every second saturday of the month by
+              7:00am. Invite everyone you can so they can witness God's power.
+            </p>
+          </div>
+        </div>
+        <div class="mercy-visitation">
+            <h1 id="small" class="show">
+              Be a part of God's blessing every Sunday
+              <a href="#big2" id="lnk3" onclick="OpenTwo()"><i class="fa-solid fa-plus"></i></a>
+              <a href="#big2" id="lnk4" onclick="CloseTwo()"><i class="fa-solid fa-circle-minus"></i></a>
+            </h1>
+  
+            <div id="big2" class="hide">
+              <p>
+                <ul>
+                    <li>Bible Discussion by 9:30</li>
+                    <li>God's word via his servant</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="mercy-visitation">
+            <h1 id="small" class="show">
+              Learn more about God every Wednesday
+              <a href="#big3" id="lnk5" onclick="OpenThree()"><i class="fa-solid fa-plus"></i></a>
+              <a href="#big3" id="lnk6" onclick="CloseThree()"><i class="fa-solid fa-circle-minus"></i></a>
+            </h1>
+  
+            <div id="big3" class="hide">
+              <p>
+                <ul>
+                    <li>Prayer Meeting by 4:30</li>
+                    <li>Bible Teaching by 5:30</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="connect">
+        <div class="container">
+            <div class="connect-title">
+            <h1>Connect with us</h1>
+            <p>You can always contact us via mobile or email. <br>
+                We will respond swiftly!</p>
+            </div>
+          <div class="connect-main">
+              <div class="connect1">
+                <i class="fa-solid fa-phone fa-3x"></i>
+                <h2>Call Us</h2>
+                <h6>08060058158</h6>
+              </div>
+              <div class="connect2" href ="mailto:fchbmchurch@gmail.com">
+                <i class="fa-solid fa-envelope fa-3x"></i>
+                <h2>Send us an email</h2>
+                <h6><a href = "mailto:fchbmchurch@gmail.com">fchbmchurch@gmail.com</a></h6>
+              </div>
+          </div>
+        </div>
+    </section>
+    <footer class="footer-about">
+      <div class="social-end">
+        <div class="logoo">
+          <img class="logo" src="../img/fchbm.jpg" alt="My logo" />
+          <h6>
+            FULLNESS OF CHRIST <br />
+            HEAVEN BOUND MINISTRY
+          </h6>
+        </div>
+        <ul class="socialss">
+          <p>Follow us</p>
+          <li>
+            <a href="https://twitter.com/ChurchFullness"
+              ><i class="fa-brands fa-twitter fa-xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/fchbmchurch/"
+              ><i class="fa-brands fa-instagram fa-xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/fullness.fchbm"><i class="fa-brands fa-facebook fa-xl"></i></a>
+          </li>
+          <li>
+            <a href="https://wa.me/+2348067430191"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+          </li>
+          <li>
+            <a href="tel:08067430191"><i class="fa-solid fa-phone fa-xl"></i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCk-iBtaAWkXhwGLaE6jur2Q"
+              ><i class="fa-brands fa-youtube fa-xl"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <p class="end">
+        © Copyright FCHBM 2022. All Right Reserved. Designed and Developed by
+        FCHBM IT DEPARTMENT
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/4dc5638582.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/programs.js"></script>
+  </body>
+</html>

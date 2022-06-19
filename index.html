@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/hii.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>FCHBM</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            class="logo"
+            src="img/fchbm.jpg"
+            alt="My logo"
+            onclick="window.location ='index.html'"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav-items navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./about.html">Who we are</a></li>
+                <li><a class="dropdown-item" href="./about.html#our-pastor">Our Pastor</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Info Center
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./programs.html">Our Programs</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Media
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./src/media.html">Audios</a></li>
+              </ul>
+            </li>
+            <button
+              type="button"
+              class="nav-btn btn btn-primary"
+              onclick="window.location = 'tel:08067430191' "
+            >
+              CONTACT
+            </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="hero">
+      <img id="background-video" src="https://images.pexels.com/photos/2014773/pexels-photo-2014773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
+      <div class="image">
+        <h1 class="slide-right">CONNECT TO EVERYTHING GOD <br>HAS FOR YOU </h1>
+        <p>
+          Fullness of Christ Heaven Bound Ministry (FCHBM) is a place where the
+          truth of the word is being taught and blessing from the lord is
+          shared. You're graciously welcome to worship with us
+        </p>
+        <p>Whether online or in person, we have a place for you!</p>
+        <button
+          type="button"
+          class="btn btn-primary"
+          onclick="window.open('https://www.youtube.com/channel/UCk-iBtaAWkXhwGLaE6jur2Q')"
+        >
+          JOIN US ONLINE >>
+        </button>
+      </div>
+    </section>
+    <section class="mercyy">
+      <div class="hour-mercy" id="programs-program">
+        <p><b>Stay updated on our special programs </b></p>
+        <p class="cust-p" id="special-programs">You do not want to miss out God's special blessings during our special programs. Find out when we have our next special program now </p>
+        <button
+          type="button"
+          class="btn btn-primary"
+          id="special-button"
+          data-bs-container="body"
+          data-bs-toggle="popover"
+          data-bs-placement="right"
+          onclick="specialPro()"
+          data-bs-content="You are invited to join us for the special program 'Hour of Mercy and Visitation taking place every second saturday of the month by 7:00am'"
+        >
+          Click Here
+        </button>
+      </div>
+    </section>
+    <section class="servicer">
+      <div class="service-wrap">
+        <div class="service">
+          
+         <img src="data:image/png;base64,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" class="servicei img-thumbnail" alt="sunday service">
+         <div class="service-one"><p><strong>COME AND HEAR GOD'S WORD</strong> <br>Jesus has all the solution to your problem.<br> Come and learn at his feet as he speaks</br> through his servant. You are invited to worship<br> with us every sunday service by 9am. <br><b>Listen to the previous sunday sermon here</b></p>
+            <audio class="sunday-cust sundaym" controls >
+              <source 
+              src="img/2404 sunday message.mpeg" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio></div>      
+        </div>
+    
+     <div class="service">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlCMs0METPKjmhje8KIiPrHQ99cBNTHv8HFg&usqp=CAU" 
+      class="servicei img-thumbnail" alt="sunday service"> 
+      <div class="service-one">   <p><strong>BIBLE STUDY & PRAYER MEETING</strong> <br>Jesus is the way,truth and life.<br> Learn more from his word today</br> You are invited to worship with us <br>every wednesday for bible study& prayer <br>meeting by 4:30pm.<b>Last Week Sermon Here</b> </p>
+          <audio class="sundaym" controls>
+            <source 
+            src="img/2104 bible study.mpeg" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+        </div> 
+     </div>
+      </div>
+    </section>
+    <section class="promises">
+        <div class="promises-quote">
+          <h1>God's promises for you</h1>
+          <p>God's Word is filled with <span>promises</span> from our Creator to provide and deliver. The Bible is the ultimate source for truth and God is faithful to fulfill all His <span>promises</span>. As you read these Bible verses about the <span>promises</span> of God, claim them over your life! <span class="promises-donotview">Freedom from addictions, deliverance from sin and evil, financial provision, hope for lost and hurting family and friends, overcoming depression, recovering a marriage, good health, healing, being free from fear and anxiety, strength, and many more are the blessings and gifts that God <span>promises</span> to provide for those who believe in Him</span></p>
+        </div>
+       <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KGGb2dV-03A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </div>
+          </section>
+   <div class="speak-to-us">
+            <h2>There's always someone to talk and pray with anytime</h2>
+            <p>There's always competent, God-fearly leaders and ministers ready to discuss with and pray along with you whenever <br>you're facing any difficult situation or you need someone to pray with you</p>
+            <button type="button" class="btn btn-light" onclick='window.location="tel:+2348067430191"'>CALL US NOW</button>
+          </div>
+    <footer class="footer">
+      <div class="footer-one">
+           <div class="footer-one1"> <h1>Listen to Inspiring<br> Messages</h1>
+            <p>Listen to Pastor Oluwaleye’s previous messages from our services and conferences. God's blessing comes from his word and you do not want to miss his blessing. Check out this audio now</p>
+            <a class="listen-btn" type="button" onclick="href='./src/media.html'">Listen Now</a></div>
+        <div class="map">
+          <h1>Visit Us</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14313.848381672515!2d5.25969517724762!3d7.6476902850749315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1047e53f7028b6c3%3A0x950937152dea11c6!2sNASFAT!5e1!3m2!1sen!2sng!4v1654627873205!5m2!1sen!2sng" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="social-end">
+          <div class="logoo">
+              <img 
+          class="logo"
+          src="img/fchbm.jpg"
+          alt="My logo" >
+          <h6>FULLNESS OF CHRIST <br> HEAVEN BOUND MINISTRY</h6>
+            </div>
+          <ul class="socialss">
+            <p>Follow us</p>
+            <li><a href="https://twitter.com/ChurchFullness"><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+            <li><a href="https://www.instagram.com/fchbmchurch/"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+            <li><a href="https://www.facebook.com/fullness.fchbm"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
+            <li><a href="https://wa.me/+2348067430191"><i class="fa-brands fa-whatsapp fa-xl"></i></a></li>
+            <li><a href="tel:08067430191"><i class="fa-solid fa-phone fa-xl"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCk-iBtaAWkXhwGLaE6jur2Q"><i class="fa-brands fa-youtube fa-xl"></i></a></li>   
+          </ul>
+        </div>
+       <p class="end">© Copyright FCHBM 2022. All Right Reserved. Designed and Developed by FCHBM IT </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/src/popper.min.js"></script>
+    <script src="./src/index.js"></script>
+    <script src="https://kit.fontawesome.com/4dc5638582.js" crossorigin="anonymous"></script>
+  </body>
+</html>
